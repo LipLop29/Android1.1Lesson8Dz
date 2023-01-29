@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.example.android11lesson8dz.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_catFragment"
+            app:destination="@id/catFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_cinematFragment"
+            app:destination="@id/cinematFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_PROGRAMMING_LANGUAGESFragment"
+            app:destination="@id/PROGRAMMING_LANGUAGESFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/catFragment"
+        android:name="com.example.android11lesson8dz.fragments.CatFragment"
+        android:label="fragment_cat"
+        tools:layout="@layout/fragment_cat" >
+        <action
+            android:id="@+id/action_catFragment_to_detailFragment"
+            app:destination="@id/detailFragment" />
+        <action
+            android:id="@+id/action_catFragment_to_addCatFragment"
+            app:destination="@id/addCatFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cinematFragment"
+        android:name="com.example.android11lesson8dz.fragments.CinematFragment"
+        android:label="fragment_cinemat"
+        tools:layout="@layout/fragment_cinemat" >
+        <action
+            android:id="@+id/action_cinematFragment_to_detailCinemaFragment"
+            app:destination="@id/detailCinemaFragment" />
+        <action
+            android:id="@+id/action_cinematFragment_to_addCinemaFragment"
+            app:destination="@id/addCinemaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/PROGRAMMING_LANGUAGESFragment"
+        android:name="com.example.android11lesson8dz.fragments.PROGRAMMING_LANGUAGESFragment"
+        android:label="fragment_p_r_o_g_r_a_m_m_i_n_g__l_a_n_g_u_a_g_e_s"
+        tools:layout="@layout/fragment_p_r_o_g_r_a_m_m_i_n_g__l_a_n_g_u_a_g_e_s" >
+        <action
+            android:id="@+id/action_PROGRAMMING_LANGUAGESFragment_to_deteilProgramFragment2"
+            app:destination="@id/deteilProgramFragment" />
+        <action
+            android:id="@+id/action_PROGRAMMING_LANGUAGESFragment_to_addProgramFragment"
+            app:destination="@id/addProgramFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/detailFragment"
+        android:name="com.example.android11lesson8dz.fragments.DetailCatFragment"
+        android:label="fragment_detail"
+        tools:layout="@layout/fragment_detail" />
+    <fragment
+        android:id="@+id/detailCinemaFragment"
+        android:name="com.example.android11lesson8dz.fragments.DetailCinemaFragment"
+        android:label="fragment_detailt2"
+        tools:layout="@layout/fragment_detailt2" />
+    <fragment
+        android:id="@+id/deteilProgramFragment"
+        android:name="com.example.android11lesson8dz.fragments.DeteilProgramFragment"
+        android:label="fragment_deteil_program"
+        tools:layout="@layout/fragment_deteil_program" />
+    <fragment
+        android:id="@+id/addCatFragment"
+        android:name="com.example.android11lesson8dz.fragments.AddCatFragment"
+        android:label="fragment_add_cat"
+        tools:layout="@layout/fragment_add_cat" >
+        <action
+            android:id="@+id/action_addCatFragment_to_catFragment"
+            app:destination="@id/catFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addCinemaFragment"
+        android:name="com.example.android11lesson8dz.fragments.AddCinemaFragment"
+        android:label="fragment_add_cinema"
+        tools:layout="@layout/fragment_add_cinema" >
+        <action
+            android:id="@+id/action_addCinemaFragment_to_cinematFragment"
+            app:destination="@id/cinematFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addProgramFragment"
+        android:name="com.example.android11lesson8dz.fragments.AddProgramFragment"
+        android:label="fragment_add_program"
+        tools:layout="@layout/fragment_add_program" >
+        <action
+            android:id="@+id/action_addProgramFragment_to_PROGRAMMING_LANGUAGESFragment"
+            app:destination="@id/PROGRAMMING_LANGUAGESFragment" />
+    </fragment>
+</navigation>
